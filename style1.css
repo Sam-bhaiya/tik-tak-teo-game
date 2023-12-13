@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+
+}
+.main span{
+    cursor: default;
+    z-index: 1;
+    font-size: 40px;
+    position: absolute;
+    margin: 10px 0px 0px 380px;
+    color: white;
+     text-shadow: 4px 2px 1px rgb(235, 11, 11);
+}
+.main .turnx{
+    position: absolute;
+    font-size: 40px;
+    left: 380px;
+
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 670px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 105px;
+    left: 420px;
+}
+
+.container .game {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    position: absolute;
+    z-index: 1;
+    width: 650px;
+    height: 500px;
+    box-shadow: 2px -4px 30px 20px rgb(81, 197, 247);
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.container .game .gamer {
+    cursor: pointer;
+    border: 4px solid rgb(211, 232, 239);
+
+}
+
+.container .game .gamer .cross {
+  
+    list-style: none;
+    font-size: 160px;
+    position: absolute;
+    margin: -20px 0px 0px 50px;
+}
+.container .game .gamer .cross:hover{
+    font-size: 180px;
+}
+
+.container .game .gamer #cross1,#cross3,#cross5,#cross7,#cross9 {
+    color: azure;
+    text-shadow: 10px 2px 7px rgb(247, 12, 12);
+}
+.container .game .gamer #cross2,#cross4,#cross6,#cross8{
+    color: azure;
+    text-shadow: 8px 2px 5px rgb(32, 214, 255);
+}
+/* game inside boder shadow start  */
+.container .game #gamer1 {
+    box-shadow: 8px 8px 15px 8px rgb(249, 130, 138);
+}
+
+.container .game #gamer2 {
+    box-shadow: -12px 8px 15px 8px rgb(249, 130, 138), 15px 15px 15px 8px rgb(249, 130, 138);
+}
+
+.container .game #gamer3 {
+    box-shadow: -8px 8px 15px 8px rgb(249, 130, 138);
+}
+
+.container .game #gamer4 {
+    box-shadow: 8px 15px 15px 8px rgb(249, 130, 138), 15px -6px 15px 8px rgb(249, 130, 138);
+
+}
+
+.container .game #gamer5 {
+    box-shadow: -10px 15px 15px 8px rgb(249, 130, 138), 15px -10px 15px 8px rgb(249, 130, 138);
+
+}
+
+.container .game #gamer6 {
+    box-shadow: -10px 15px 15px 8px rgb(249, 130, 138), -8px -8px 15px 8px rgb(249, 130, 138);
+}
+
+.container .game #gamer7 {
+    box-shadow: 12px -12px 15px 8px rgb(249, 130, 138);
+}
+
+.container .game #gamer8 {
+    box-shadow: 8px -12px 15px 8px rgb(249, 130, 138), -8px -12px 15px 8px rgb(249, 130, 138);
+
+}
+
+.container .game #gamer9 {
+    box-shadow: -8px -12px 15px 8px rgb(249, 130, 138);
+}
+
+/* game inside boder shadow end  */
+
+/* remove outside outline boder  */
+.container .game #gamer1,
+#gamer2,
+#gamer3 {
+    border-top: none;
+}
+
+.container .game #gamer1,
+#gamer4,
+#gamer7 {
+    border-left: none;
+
+}
+
+.container .game #gamer7,
+#gamer8,
+#gamer9 {
+    border-bottom: none;
+
+}
+
+.container .game #gamer3,
+#gamer6,
+#gamer9 { 
+    border-right: none;
+
+}
+.btn{
+    cursor: pointer;
+    z-index: 2; 
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 34px;
+    border-radius: 12px;
+    top: 60%;
+    left: 75%;
+    box-shadow: 1px 1px 13px 4px white;
+    border: 2px solid #857c7c;
+    color: white;
+    font-size: 20px;
+    background-color: #0be6c1;
+    transition: 0.4s ease-in-out;
+}
+.btn:hover{
+    box-shadow: 1px 1px 13px 4px#0be6c1;
+    border: 2px solid #484b4f;
+    color: #0be6c1;
+    background-color: white;
+}
+.gif{
+    cursor: pointer;
+    z-index: 2;
+    top: 22%;
+    left: 73%;
+    position: absolute;
+}
+.gif video{
+    width: 200px;
+    height:244px;
+    display: none;
+}

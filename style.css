@@ -1,0 +1,106 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main img {
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.main .name{
+    cursor: default;
+    margin: 36px 0px 0px 1000px;
+    font-size: 50px;
+    color: rgb(94, 220, 255);
+    position: absolute;  
+    z-index: 1;
+    text-shadow: 7px -4px 4px rgba(88, 238, 255, 0.755);
+    animation: anuj 3s linear forwards;
+     animation-duration: 4s;
+
+
+
+}
+@keyframes anuj {
+    0% {
+        transform: translate(0px)scale(0.5)rotateY(180deg);}
+    
+    
+    100% {
+        transform: translate(0px) scale(1);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0px 0px 0px;
+    position: absolute;
+    width: 440px;
+    height: 500px;
+    background-color: rgb(255, 255, 255,0.2);
+    z-index: 1;
+    border-radius: 20px;  
+
+}
+
+.container .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    
+
+}
+.container .navbar h2{
+    /* font-family: 'Zilla Slab', serif; */
+    cursor: default;
+    margin: 0px 0px 65px 0px;
+    text-shadow: 5px 5px 4px rgb(242, 133, 133);
+    color: rgb(254, 254, 254);
+}
+
+.container .navbar .list{
+    padding: 12px;
+   margin: 5px 12px;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(251, 252, 255);
+}
+.container .navbar.list::after{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .navbar .list:hover{
+
+    text-decoration: underline;
+}
+.container .navbar .list li{
+    text-shadow: 3px 2px 1px rgb(86, 207, 255);
+  
+    color: rgb(230, 243, 243);
+}
+.container .navbar .list li:hover{
+    font-size: 30px;
+    color: lightcyan;
+    text-shadow: 4px 4px 4px rgb(76, 204, 255);
+}
+
